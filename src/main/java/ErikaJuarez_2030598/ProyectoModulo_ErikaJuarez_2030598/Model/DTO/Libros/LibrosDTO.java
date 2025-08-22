@@ -23,7 +23,7 @@ public class LibrosDTO {
     @NotNull
     private String titulo;
 
-    @NotNull @UniqueElements
+    @NotNull
     private String isbn;
 
     @Positive @Nullable

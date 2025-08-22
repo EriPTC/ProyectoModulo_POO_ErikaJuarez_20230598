@@ -41,9 +41,9 @@ public class LibrosController {
             LibrosDTO response = services.InsertarDatos(json);
             if (response == null){
                 return ResponseEntity.badRequest().body(Map.of(
-                        "Status", "Inserción incorrecta",
                         "Error", "VALIDATION_ERROR",
-                        "Message", "Datos del usuario invalidos"
+                        "Status", "Inserción incorrecta",
+                        "Descripcion", "Datos del usuario invalidos"
                 ));
             }
             return ResponseEntity.status(HttpStatus.CREATED).body(Map.of(
