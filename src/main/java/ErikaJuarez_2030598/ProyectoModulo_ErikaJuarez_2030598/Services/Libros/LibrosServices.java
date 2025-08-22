@@ -67,6 +67,7 @@ public class LibrosServices {
     public LibrosDTO ActualizarLibro (Long id, LibrosDTO json){
         LibrosEntity existente = librosRepository.findById(id).orElseThrow(()-> new ExceptionLibroNoEncontrado("No se ha encontrado el libro"));
         existente.setId(json.getId());
+        existente.setIsbn(json.getIsbn());
         existente.setTitulo(json.getTitulo());
         existente.setAño_publicacion(json.getAño_publicacion());
         existente.setGenero(json.getGenero());
