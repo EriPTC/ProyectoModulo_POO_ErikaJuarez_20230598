@@ -35,7 +35,7 @@ public class LibrosController {
     }
 
     @PostMapping("/ingresarLibro")
-    private ResponseEntity<Map<String, Object>>AgregarLibro(@Valid @RequestBody LibrosDTO json, HttpServletRequest request){
+    public ResponseEntity<Map<String, Object>>AgregarLibro(@Valid @RequestBody LibrosDTO json, HttpServletRequest request){
 
         try {
             LibrosDTO response = services.InsertarDatos(json);

@@ -27,7 +27,7 @@ public class LibrosEntity {
     private String isbn;
 
     @Column(name = "AÑO_PUBLICACION")
-    private int año_publicacion;
+    private Long año_publicacion;
 
     @Column(name = "GENERO")
     private String genero;

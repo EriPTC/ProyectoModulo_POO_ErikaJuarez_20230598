@@ -27,7 +27,7 @@ public class LibrosDTO {
     private String isbn;
 
     @Positive @Nullable
-    private  int año_publicacion;
+    private  Long año_publicacion;
 
     @Nullable
     private String genero;
